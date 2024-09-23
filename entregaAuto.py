@@ -72,7 +72,7 @@ def menu():
             print("Saliendo del MENU.")
             break
         else:
-            print("\n Opción inválida. Intenta de nuevo.")
+            print("\n Opción inválida. Intente de nuevo.")
 
 
 
