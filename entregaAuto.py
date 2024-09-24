@@ -35,7 +35,9 @@ def marcasDeAmbos(autos, motos):
     for auto in autos:   # Recorremos con el elemento auto cada marca  en la lista de autos
         if auto in motos:  # Si la marca también está en la lista de motos
             m_com .append(auto)  # Añadimos el elemento auto, la marca a la lista de comunes 
-    return m_com 
+
+    marca_r=', '.join(m_com)    
+    return marca_r 
 
 
 

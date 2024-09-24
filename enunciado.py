@@ -184,6 +184,8 @@ print("El auto más caro es:", auto, "con un precio de: $", pre_max)
 
 
 
+'''
+
 def motoMasBarata():
     pre_min = precios_motos[0]  # Inicializamos con el primer precio
     idx_min = 0  # Índice de la moto más barata
@@ -199,6 +201,27 @@ precios_motos = [100000, 250000, 2000000, 1000000]
 
 moto, pre_min = motoMasBarata()
 print("La moto más barata es:", moto, "con un precio de: $", pre_min)
+
+
+'''
+
+
+def marcasDeAmbos(autos, motos):
+    m_com = []  # Lista para almacenar las marcas de ambos
+    for auto in autos:   # Recorremos con el elemento auto cada marca  en la lista de autos
+        if auto in motos:  # Si la marca también está en la lista de motos
+            m_com .append(auto)  # Añadimos el elemento auto, la marca a la lista de comunes 
+
+    marca_r=', '.join(m_com)    
+    return marca_r 
+
+# Listas de autos y motos
+autos = ["Ferrari", "VolksWagen", "Fiat", "Lamborghini", "Tesla", "Honda"]
+motos = ["Zanella", "Motomel", "Harley", "Honda"]
+
+# Llamamos a la función
+m_com  = marcasDeAmbos(autos, motos)
+print("Marcas que fabrican tanto autos como motos:", m_com )
 
 
 
